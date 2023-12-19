@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <body>
+    <!--menu-->
+        <nav>
+            <div class="wrapper">
+                <div class="logo"><img src="img/Logo_Unpas-removebg-preview.png"></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#hobi">Hobi</a></li>
+                        <li><a href="#portofolio">Portfolio</a></li>
+                        <li><a href="#tentang-saya">Tentang saya</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <button class="hamburger-menu">
+                    <i class="fa-solid fa-bars icon-bars"></i>
+                    <i class="fa-solid fa-xmark icon-close"></i>
+                </button>
+            </div>
+        </nav>
+    <!-- hero / jumbotron-->
+    <header>
+        <div class="header-opacity"></div>
+        <div class="header-jumbotron">
+            <h4>Hallo, Nama Saya Dwiyan Yusup Rayaka</h4>
+            <h5>Universitas <span>Pasundan</span></h5>
+            <h4>Jurusan Teknik Informatika</h4>
+            <a href="https://github.com/DwiyanYusup/itw2023_233040155" class="button button-xl">My Github</a>
+        </div>
+    </header>
+    <!-- Hobi -->
+    <section id="hobi">
+        <div class="wrapper">
+            <div>
+                <p><i class="fa-solid fa-gamepad"></i>Games</p>
+                <small>Mobile Legend</small>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-basketball"></i>Basket</p>
+                <small>Basket</small>
+            </div>
+            <div>
+                <p><i class="fa-regular fa-futbol"></i>Futbol</p>
+                <small>Futbol</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portofolio -->
+    <section id="portofolio">
+        <div class="wrapper">
+            <h4> Portofolio </h4>
+            <div class="grid">
+                <div class="item">
+                    <img src="img/Foto-Web-Design.jpeg" alt="Ini Foto" height="200px">
+                </div>
+                <div class="item">
+                    <img src="img/Fiber Optik.jpg" alt="ini Foto 2" height="200px">
+                </div>
+                <div class="item">
+                    <img src="img/Power Point.jpg" alt="ini Foto 3" height="200px">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  leTentang Saya -->
+    <section id="tentang-saya">
+        <div class="wrapper">
+            <h4>Tentang Saya</h4>
+            <div>
+                <div class="foto">
+                    <img src="img/Foto Tentang Saya.jpeg" alt="foto"></div>
+                <div class="desc">
+                    <p>Hallo, Saya Dwiyan Yusup Rayaka seorang mahasiswa baru di jurusan Teknik Informatika dengan
+                        semangat yang tinggi untuk mengeksplorasi dunia teknologi. Dengan latar belakang pendidikan dan 
+                        minat saya.
+                    </p>
+                    <p>Dengan semangat belajar yang tinggi dan komitmen untuk terus berkembang, saya siap menghadapi
+                        tantangan dan meraih pencapaian yang lebih tinggi di dunia Teknik Informatika.
+                    </p>
+                    <div class="social">
+                        <a href="https://www.instagram.com/yusupryk/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@ucup0201?lang=en"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://web.facebook.com/dwiyan.yusuprayaka/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/DwiyanYusup/itw2023_233040155"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+        <div class="wrapper">
+            <h2>Contact</h2>
+
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text" placeholder="Nama Anda">
+                </div>
+                <div class="form-group">
+                    <label for="">Email Address</label>
+                    <input type="email" placeholder="Email Anda">
+                </div>
+                <div class="form-group">
+                    <label for="">Pesan</label>
+                    <textarea name="" id="" rows="5" placeholder="Ketik Pesan Anda Disini..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit">Kirim Pesan</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">&copy; 2023 Design by Dwiyan Yusup Rayaka</div>
+    </footer>
+    <script src="js/main.js"></script>
+    </body>
+</html>

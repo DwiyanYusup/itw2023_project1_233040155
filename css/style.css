@@ -1,0 +1,567 @@
+html, 
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+/*
+* menu
+*/
+
+nav {
+    background-color: #222831;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.menu > ul >li >a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    display:flex ;
+    align-items: center;
+}
+.logo > img {
+    height: 60px;
+}
+
+/*
+* Hero / jumbotron
+*/
+
+header {
+    background: url('../img/Utama.jpeg');
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header-opacity {
+    background-color: #222831;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+    text-shadow: 0 0 4px #fff;
+}
+
+.header-jumbotron > h4 {
+    color: #000;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-jumbotron > h5 {
+    color: #fff;
+    margin: 0;
+    padding: 5px;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+}
+
+.header-jumbotron > h5 > span {
+    color: #fbff00;
+}
+
+.header-jumbotron > h4 {
+    padding: 5px;
+    margin: 0px 5px 20px 5px;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    text-shadow: none;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0.678);
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-xl {
+    font-size: 1.4rem;
+    padding: 20px;
+    color: #fff;
+}
+
+/*
+* hobi
+*/
+
+#hobi {
+    background-color: #393e46;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 65px 0;
+}
+
+#hobi > .wrapper {
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#hobi > .wrapper > div {
+    text-align: center;
+}
+
+#hobi > .wrapper > div > p {
+    font-size: 3.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+#hobi > .wrapper > div > p > i {
+    margin-right: 10px;
+    font-size: 3.5rem;
+}
+
+#hobi > .wrapper > div > small {
+    font-size: 1.5rem;
+}
+
+/*
+* Premium course
+*/
+
+#portofolio {
+    background-color: #222831;
+    color: #fff;
+    padding: 65px 0;
+}
+
+#portofolio > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#portofolio > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#portofolio > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 50px;
+}
+
+.grid > .item {
+    border: 1px solid #666;
+    background-color: #393e46;
+    border-radius: 5px;
+    place-self: center;
+}
+
+.grid > .item > img {
+    border-radius: 8px;
+}
+
+/*
+* Tentang Saya
+*/
+
+#tentang-saya {
+    background-color: #eeee;
+    color: #333;
+    padding: 65px 0;
+}
+
+#tentang-saya > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#tentang-saya > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#tentang-saya > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+#tentang-saya > .wrapper > div {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tentang-saya > .wrapper > div > .foto {
+    width: 30%;
+}
+
+#tentang-saya > .wrapper > div > .foto > img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+#tentang-saya > .wrapper > div > .desc {
+    width: 70%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#tentang-saya > .wrapper > div > .desc > p {
+    margin: 0px 0px 10px 0px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+#tentang-saya > .wrapper > div > .desc > .social {
+    display: flex;
+    width: 27%;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+#tentang-saya > .wrapper > div > .desc > .social > a {
+    color: #00adb5;
+}
+
+/*
+* Contact
+*/
+#contact {
+    background: #343d4b;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#contact > .wrapper {
+    background: #fff;
+    width: 40%;
+    box-shadow: 0px 2.2px rgba(0, 0, 0, 0.028) 0 0px 5.3px rgba(0, 0, 0, 0.4), 0 0px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem 0;
+    border-radius: 8px;
+}
+
+#contact > .wrapper > h2 {
+    width: 90%;
+    background: #343d4b;
+    color: white;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    cursor: default;
+}
+
+form,
+input,
+textarea,
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: initial;
+    width: 100%;
+}
+
+.form-group > label {
+    display: block;
+    margin: .8rem 0 0.5rem 0;
+}
+
+.form-group > input[type="text"],
+.form-group > input[type="email"] {
+    width: 90%;
+    /* height: 200rem; */
+    padding: 1rem .1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: 0;
+    transition: border 0.15s;
+}
+.form-group > textarea {
+    width: 90%;
+    padding: 1rem 0.1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: 0;
+    transition: border 0.15s;
+}
+
+.form-group > input[type="text"],
+.form-group > input[type="email"] {
+    height: .3rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit {
+    background: #343d4b;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
+.submit:hover {
+    background: rgb(43, 48, 49);
+    color: #000;
+}
+
+.form-group > input[type="text"]:focus,
+.form-group > input[type="email"]:focus,
+.form-group textarea:focus {
+    border: 1px solid #343d4b;
+} 
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    opacity: 0;
+}
+
+/*
+* Copyright
+*/
+
+footer {
+    background-color: #222831;
+    color: #fff;
+    text-align: center;
+}
+
+footer > .wrapper {
+    padding: 30px 0px 30px 0px;
+}
+
+/*
+* hamberger menu
+*/
+
+button.hamburger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+button.hamburger-menu > i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+button.hamburger-menu > i.icon-close {
+    display: none;
+}
+
+/*
+*   1024, 900, 768, 600, 450
+*/
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #hobi > .wrapper > div > p {
+        font-size: 2.5rem;
+        margin: 0px;
+        padding: 0px;
+    }
+    #hobi > .wrapper > div > p > i {
+        font-size: 2.5rem;
+    }
+    #hobi > .wrapper > div > small {
+        font-size: 1rem;
+    }
+    .grid {
+        grid-template-columns: 45% 45%;
+    }
+    .item > img {
+        width: auto;
+    }
+    #contact > .wrapper {
+        width: 35%;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .menu {
+        width: 60%;
+    }
+    .header-jumbotron > h4 {
+        font-size: 1.5rem;
+    }
+    .header-jumbotron > h5 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+    .header-jumbotron > p {
+        font-size: 0.8rem;
+    }
+    .button {
+        padding: 5px;
+    }
+    .button-xl {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    #hobi > .wrapper > div > p {
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+    #hobi > .wrapper > div > p > i {
+        font-size: 1.5rem;
+    }
+
+    #contact > .wrapper {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 100%;
+    }
+
+    #hobi > .wrapper {
+        padding: 10px;
+        flex-direction: column;
+    }
+    #hobi > .wrapper > div {
+        display: flex;
+    }
+    #hobi > .wrapper > div > small {
+        font-size: 1.5rem;
+        padding-left: 10px;
+    }
+    
+    #tentang-saya > .wrapper > div {
+        width: 100%;
+        flex-direction: column;
+    }
+    #tentang-saya > .wrapper > div > .foto {
+        width: 50%;
+    }
+    #tentang-saya > .wrapper > div > .foto > img {
+        max-width: 100%;
+    }
+    #tentang-saya > .wrapper > div > .desc {
+        width: 70%;
+        padding: 20px;
+        margin: 10px;
+    }
+    #tentang-saya > .wrapper > div > .desc > .social {
+        margin: auto;
+    }
+    button.hamburger-menu {
+        display: inline;
+        text-align: right;
+    }
+    .menu {
+        display: none;
+    }
+
+    .tampil {
+        display: inline;
+    }
+    .tampil > ul {
+        flex-direction: column;
+        background-color: #222831;
+        width: 100%;
+        position: fixed;
+        top: 85px;
+        left: 0;
+    }
+    .tampil > ul >li {
+        padding: 10px 20px 10px 20px;
+    }
+    #contact > .wrapper {
+        width: 65%;
+    }
+    #contact > .wrapper > h2 {
+        padding: 1rem .2rem;
+    }
+
+}
